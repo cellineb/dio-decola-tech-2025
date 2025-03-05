@@ -1,32 +1,14 @@
-package me.dio.domain.model;
-
-import jakarta.persistence.*;
+package me.dio.dto;
 
 import java.time.LocalDate;
 
-@Entity(name = "tb_book")
-public class Book {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-
-    @Column(unique = true)
+public class BookDTO {
     private long ISBN;
-
     private String title;
     private String author;
     private String genre;
     private LocalDate publicationDate;
     private int stars;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public long getISBN() {
         return ISBN;

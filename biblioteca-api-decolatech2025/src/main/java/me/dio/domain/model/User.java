@@ -17,17 +17,17 @@ public class User {
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
-            name = "user_favorites", // Nome da tabela de junção
-            joinColumns = @JoinColumn(name = "user_id"), // Coluna do usuário
-            inverseJoinColumns = @JoinColumn(name = "book_id") // Coluna do livro
+            name = "user_favorites",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "book_id")
     )
     private List<Book> favorites = new ArrayList<>();
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
-            name = "user_wishlist", // Nome da tabela de junção
-            joinColumns = @JoinColumn(name = "user_id"), // Coluna do usuário
-            inverseJoinColumns = @JoinColumn(name = "book_id") // Coluna do livro
+            name = "user_wishlist",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "book_id")
     )
     private List<Book> wishlist = new ArrayList<>();
 
