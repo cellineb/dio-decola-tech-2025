@@ -1,5 +1,6 @@
 package me.dio.service;
 
+import me.dio.controller.exception.ResourceNotFoundException;
 import me.dio.domain.model.Book;
 import me.dio.domain.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,5 +29,19 @@ public class BookService {
 
     public void deleteById(int id) {
         bookRepository.deleteById(id);
+    }
+
+    public Book update(int id, Book updatedBook) {
+        return bookRepository.findById(id)
+                .map(book -> {
+                    book.setISBN(updatedBook.getISBN());
+                    book.setTitle(updatedBook.getTitle());
+                    book.setAuthor(updatedBook.getAuthor());
+                    book.setGenre(updatedBook.getGenre());
+                    book.setPublicationDate(updatedBook.getPublicationDate());
+                    book.setStars(updatedBook.getStars());
+                    return bookRepository.save(book);
+                })
+                .orElseThrow(() -> new ResourceNotFoundException("Book not found with id: " + id));
     }
 }

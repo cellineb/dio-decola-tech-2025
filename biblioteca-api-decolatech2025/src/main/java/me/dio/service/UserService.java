@@ -1,5 +1,6 @@
 package me.dio.service;
 
+import me.dio.controller.exception.ResourceNotFoundException;
 import me.dio.domain.model.User;
 import me.dio.domain.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,5 +29,17 @@ public class UserService {
 
     public void deleteById(int id) {
         userRepository.deleteById(id);
+    }
+
+    public User update(int id, User updatedUser) {
+        return userRepository.findById(id)
+                .map(user -> {
+                    user.setName(updatedUser.getName());
+                    user.setCPF(updatedUser.getCPF());
+                    user.setFavorites(updatedUser.getFavorites());
+                    user.setWishlist(updatedUser.getWishlist());
+                    return userRepository.save(user);
+                })
+                .orElseThrow(() -> new ResourceNotFoundException("User not found with id: " + id));
     }
 }
