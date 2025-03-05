@@ -1,5 +1,5 @@
 # Decola Tech Avanade 2025
-Diagrama de classes Projeto 1 - Biblioteca 
+Diagrama de classes Projeto 1 API REST - Biblioteca 
 
 ```mermaid
 classDiagram
