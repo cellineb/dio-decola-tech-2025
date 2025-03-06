@@ -1,33 +1,28 @@
 # Decola Tech Avanade 2025
-Diagrama de classes Projeto 1 API REST - Biblioteca 
+## Projeto 1 - API REST - Biblioteca 
+O Projeto consiste em uma API REST que utiliza Java e Spring Boot. A aplicação é um acervo pessoal de livros, contendo os usuarios que podem ter a lista de livros favoritos e a lista de desejo, as duas entidades (User e Book) possuem as 4 operações CRUD (Create, Read, Update e Delete). 
+Foi desenvolvido para ajudar na abstração do projeto, um protótipo e um diagrama de classes. O protótipo foi feito pelo Figma e o diagrama de classes foi feito usando a sintaxe mermaid. 
 
 ```mermaid
 classDiagram
-    class Usuario {
-        +String id
-        +String nome
-        +String CPF
-        +List<Livro> favoritos
-        +List<Livro> wishlist
+    class Book {
+        -int id
+        -long ISBN
+        -String title
+        -String author
+        -String genre
+        -LocalDate publicationDate
+        -int stars
     }
-    
-    class Livro {
-        +String id
-        +String titulo
-        +String autor
-        +String genero
-        +String dataPublicacao
-        +int estrelas
+
+    class User {
+        -int id
+        -String name
+        -String CPF
+        -List~Book~ favorites
+        -List~Book~ wishlist
     }
-    
-    Usuario "1" --* "*" Livro : Favoritos
-    Usuario "1" --* "*" Livro : Wishlist
-    
-    class Biblioteca {
-        +List<Usuario> usuarios
-        +List<Livro> livros
-    }
-    
-    Biblioteca "1" --* "*" Usuario
-    Biblioteca "1" --* "*" Livro
+
+    User "1" *-- "0..*" Book : favorites
+    User "1" *-- "0..*" Book : wishlist
 ````
