@@ -1,7 +1,7 @@
 # Decola Tech Avanade 2025
 ## Projeto 1 - API REST - Biblioteca 
-O Projeto consiste em uma API REST que utiliza Java e Spring Boot. A aplicação é um acervo pessoal de livros, contendo os usuarios que podem ter a lista de livros favoritos e a lista de desejo, as duas entidades (User e Book) possuem as 4 operações CRUD (Create, Read, Update e Delete). 
-Foi desenvolvido para ajudar na abstração do projeto, um protótipo e um diagrama de classes. O protótipo foi feito pelo Figma e o diagrama de classes foi feito usando a sintaxe mermaid. 
+<p>O projeto consiste em uma API RESTful desenvolvida em Java com o framework Spring Boot. A aplicação tem como objetivo gerenciar um acervo pessoal de livros, onde os usuários podem manter uma lista de livros favoritos e outra lista de livros que desejam comprar (wishlist). A API oferece operações completas de CRUD (Create, Read, Update e Delete) para duas entidades principais: User (usuário) e Book (livro). <br>Para auxiliar na abstração e melhor entendimento do projeto foram desenvolvidos um protótipo e um digrama de classes. O protótipo foi feito pelo Figma e o diagrama foi feito com base na sintaxe mermaid</p>
+<a href="https://drive.google.com/file/d/1ROQKl-DViSmt8UlK6o8ymMHjD2BxGrDO/view?usp=sharing">Link do Protótipo</a> 
 
 ```mermaid
 classDiagram
