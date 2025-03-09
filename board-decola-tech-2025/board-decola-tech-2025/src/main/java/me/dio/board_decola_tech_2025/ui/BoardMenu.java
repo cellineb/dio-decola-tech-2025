@@ -2,11 +2,14 @@ package me.dio.board_decola_tech_2025.ui;
 
 
 import lombok.AllArgsConstructor;
+import me.dio.board_decola_tech_2025.dto.BoardColumnInfoDTO;
 import me.dio.board_decola_tech_2025.persistence.entity.BoardEntity;
 import me.dio.board_decola_tech_2025.persistence.entity.CardEntity;
 import me.dio.board_decola_tech_2025.service.BoardColumnQueryService;
 import me.dio.board_decola_tech_2025.service.BoardQueryService;
 import me.dio.board_decola_tech_2025.service.CardQueryService;
+import me.dio.board_decola_tech_2025.service.CardService;
+import me.dio.board_decola_tech_2025.persistence.entity.BoardColumnEntity;
 
 import java.sql.SQLException;
 import java.util.Scanner;
