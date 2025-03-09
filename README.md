@@ -64,3 +64,6 @@ classDiagram
         +createdAt: OffsetDateTime
     }
 ```
+
+## Projeto 3 - Blog com Angular
+Crie uma aplicação de blog funcional, construa componentes inteligentes e aprenda como organizar seu projeto Angular utilizando as ferramentas que o próprio framework Oferece.
