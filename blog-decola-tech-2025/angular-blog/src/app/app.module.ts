@@ -13,7 +13,7 @@ import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
     IconComponent,
     MenuBarComponent,
     MenuTitleComponent,
-    SmallCardComponent 
+    SmallCardComponent
   ],
   imports: [
     BrowserModule
