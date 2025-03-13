@@ -35,6 +35,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.flywaydb:flyway-core")
 	implementation("org.flywaydb:flyway-database-postgresql")
+	implementation ("org.flywaydb:flyway-mysql")
 	implementation("org.mapstruct:mapstruct:$mapStructVersion")
 	implementation("mysql:mysql-connector-java:8.0.33")
 
@@ -43,6 +44,7 @@ dependencies {
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 
 	runtimeOnly("org.postgresql:postgresql")
+	runtimeOnly ("com.mysql:mysql-connector-j")
 
 	annotationProcessor("org.mapstruct:mapstruct-processor:$mapStructVersion")
 	annotationProcessor("org.projectlombok:lombok-mapstruct-binding:0.2.0")
