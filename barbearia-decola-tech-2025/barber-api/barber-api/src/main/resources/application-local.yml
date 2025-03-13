@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/barber_db
+    username: root
+    password: 123!456
+  profiles:
+    active: local,dev
