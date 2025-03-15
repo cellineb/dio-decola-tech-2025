@@ -76,3 +76,6 @@ O projeto consiste em um quizz estilo BuzzFeed, decidi fazer com o tema "Você �
 
 ## Projeto 6 - Análise de Sentimentos com Language Studio no Azure AI
 Este projeto foi desenvolvido utilizando o Azure AI Language Studio para realizar uma análise de sentimentos em textos. Para simular avalições a serem analisadas pedi para uma IA criar 3 avaliações de um restaurante. Deixei os prints e uma descrição de cada avaliação no README.md do projeto. 
+
+## Projeto 7 - Azure Cognitive Search com AI
+Este projeto consiste em mostrar na prática a ferramenta de AI Search, no README.md do projeto tem o passo a passo de como utilizar o AI Search e uma conclusão do que eu achei da ferramenta.
