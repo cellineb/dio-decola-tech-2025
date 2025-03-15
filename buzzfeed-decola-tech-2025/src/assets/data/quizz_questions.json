@@ -1,55 +1,63 @@
 {
-    "title":"Você seria um heroi ou vilão ?",
+    "title":"Você é mais Front-end ou Back-end?",
     "questions":[
       {
         "id":1,
-        "question": "Qual super poder você escolheria ?",
+        "question": "Em um projeto em equipe você prefere ficar responsável por qual parte?",
         "options":[
-          {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-          {"id": 2, "name":"Voar", "alias":"B"},
-          {"id": 3, "name":"Explodir coisas", "alias":"A"},
-          {"id": 4, "name":"Curar feridas", "alias":"B"},
-          {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
+          {"id": 1, "name":"Criar componentes de UI", "alias":"F"},
+          {"id": 2, "name":"Modelar o banco de dados", "alias":"B"},
+          {"id": 3, "name":"Criar interfaces bonitas interativas", "alias":"F"}
         ]
       },
       {
         "id":2,
-        "question": "Quem você salvaria primeiro ?",
+        "question": "O que você mais gosta de ver ao desenvolver um projeto?",
         "options":[
-          {"id": 1, "name":"Crianças", "alias":"A"},
-          {"id": 2, "name":"Idosos", "alias":"A"},
-          {"id": 3, "name":"Não saberia escolher", "alias":"B"}
+          {"id": 1, "name":"Ver o design ganhando vida", "alias":"F"},
+          {"id": 2, "name":"Criar um sistema que processa dados eficientemente", "alias":"B"},
+          {"id": 3, "name":"Implementar uma arquitetura escalável para o sistema", "alias":"B"}
         ]
       },
       {
         "id":3,
-        "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
+        "question": "Como você gosta de testar seu código?",
         "options":[
-          {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-          {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-          {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-          {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
+          {"id": 1, "name":"Abro o navegador e vejo se está tudo funcionando corretamente", "alias":"F"},
+          {"id": 2, "name":"Escrevo testes automatizados", "alias":"B"}
         ]
       },
       {
         "id":4,
-        "question": "Qual o seu maior foco ?",
+        "question": "Dessas opções qual é a que melhor te representa?",
         "options":[
-          {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-          {"id": 2, "name":"Salvar a cidade", "alias":"B"}
+          {"id": 1, "name":"Criativo(a) e voltado(a) para experiência do usuário", "alias":"F"},
+          {"id": 2, "name":"Analítico(a) e focado(a) em lógica e performance", "alias":"B"}
         ]
       },
       {
         "id":5,
-        "question": "Qual o seu apelido de super ser ?",
+        "question": "Qual destes desafios você prefere resolver?",
         "options":[
-          {"id": 1, "name":"O Terrivel", "alias":"A"},
-          {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
+          {"id": 1, "name":"Otimizar o desempenho de consultas ao banco de dados", "alias":"B"},
+          {"id": 2, "name":"Criar animações e transições suaves", "alias":"F"},
+          {"id": 3, "name":"Implementar autenticação e autorização", "alias":"B"},
+          {"id": 4, "name":"Garantir que o site seja responsivo em todos os dispositivos", "alias":"F"}
+        ]
+      },
+      {
+        "id":6,
+        "question": "Qual destas tecnologias mais desperta seu interesse?",
+        "options":[
+          {"id": 1, "name":"React, Vue.js ou Angular", "alias":"F"},
+          {"id": 2, "name":"Node.js, Django ou Spring", "alias":"B"},
+          {"id": 3, "name":"CSS, SASS e frameworks de UI", "alias":"F"},
+          {"id": 4, "name":"Bancos de dados e sistemas de cache", "alias":"B"}
         ]
       }
     ],
     "results":{
-      "A": "Você muito provavelmente seria um super vilão!",
-      "B": "Você muito provavelmente seria um super Herói!"
+      "F": "Você está mais inclinado a ser um desenvolver Front-End!",
+      "B": "Você está mais inclinado a ser um desenvolver Back-End!"
     }
   }
