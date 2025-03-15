@@ -72,3 +72,4 @@ Crie uma aplicação de blog funcional, construa componentes inteligentes e apre
 O projeto 5 consiste na criação de um app de agendamento para uma barbearia, tendo os CRUD's para a entidade cliente e agendamentos. O back-end foi desenvolvido em Java e Gradle, enquanto o front-end foi desenvolvido em TypeScript com Angular.
 
 ## Projeto 5 - Clone do BuzzFeed
+O projeto consiste em um quizz estilo BuzzFeed, decidi fazer com o tema "Você é mais Front-End ou Back-End?", dependendo das escolhas do usuário do quizz leva a uma resposta diferente! O projeto foi desenvolvido em TypeScript com Angular.
