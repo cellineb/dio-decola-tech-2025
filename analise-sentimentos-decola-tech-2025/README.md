@@ -1,7 +1,7 @@
 # Análise de Sentimentos com Azure AI Language Studio
 
 ## Sobre o Projeto
-Este projeto foi desenvolvido utilizando o Azure AI Language Studio para realizar uma análise de sentimentos em textos. Para simular as avalições a serem analisadas pedi para uma IA criar 3 avaliações de u restaurante.
+Este projeto foi desenvolvido utilizando o Azure AI Language Studio para realizar uma análise de sentimentos em textos. Para simular as avalições a serem analisadas pedi para uma IA criar 3 avaliações de um restaurante.
 
 ## Primeira avaliação
 <p>"Fui ao restaurante ontem e fiquei impressionado com a comida! O prato principal estava delicioso, bem temperado e servido na temperatura perfeita. O atendimento foi rápido e muito cordial. Certamente voltarei!"</p>
