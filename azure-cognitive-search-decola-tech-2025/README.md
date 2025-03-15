@@ -1,4 +1,5 @@
 # Projeto Azure Cognitive Search com AI para Indexação e Consulta de Dados
+Este projeto consiste em mostrar na prática a ferramenta de AI Search, aqui deixei o passo a passo de como utilizar o AI Search e uma conclusão do que eu achei da ferramenta.
 
 ## Passo a Passo para Configuração de Pesquisa no Azure Cognitive Search
 
