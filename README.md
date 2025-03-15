@@ -73,3 +73,6 @@ O projeto 5 consiste na criação de um app de agendamento para uma barbearia, t
 
 ## Projeto 5 - Clone do BuzzFeed
 O projeto consiste em um quizz estilo BuzzFeed, decidi fazer com o tema "Você é mais Front-End ou Back-End?", dependendo das escolhas do usuário do quizz leva a uma resposta diferente! O projeto foi desenvolvido em TypeScript com Angular.
+
+## Projeto 6 - Análise de Sentimentos com Language Studio no Azure AI
+Este projeto foi desenvolvido utilizando o Azure AI Language Studio para realizar uma análise de sentimentos em textos. Para simular avalições a serem analisadas pedi para uma IA criar 3 avaliações de um restaurante. Deixei os prints e uma descrição de cada avaliação no README.md do projeto. 
