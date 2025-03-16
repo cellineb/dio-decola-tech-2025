@@ -66,7 +66,7 @@ classDiagram
 ```
 
 ## Projeto 3 - Blog com Angular
-Crie uma aplicação de blog funcional, construa componentes inteligentes e aprenda como organizar seu projeto Angular utilizando as ferramentas que o próprio framework Oferece.
+O projeto 3 era o desenvolvimento de um site, focado no front-end. Desenvolvi um blog como portifólio pessoal em TypeScript e Angular, o site contém link para alguns projetos meus no GitHub
 
 ## Projeto 4 - APP Full Stack Barbearia
 O projeto 5 consiste na criação de um app de agendamento para uma barbearia, tendo os CRUD's para a entidade cliente e agendamentos. O back-end foi desenvolvido em Java e Gradle, enquanto o front-end foi desenvolvido em TypeScript com Angular.
