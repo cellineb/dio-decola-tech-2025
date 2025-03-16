@@ -1,27 +1,22 @@
-import { Component } from "@angular/core"
-import { MenuTitleComponent } from "./components/menu-title/menu-title.component"
-import { MenuBarComponent } from "./components/menu-bar/menu-bar.component"
-import { SmallCardComponent } from "./components/small-card/small-card.component"
-import { IconComponent } from "./components/icon/icon.component"
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { SmallCardComponent } from "./components/small-card/small-card.component";
+import { BigCardComponent } from "./components/big-card/big-card.component";
+import { MenuTitleComponent } from './components/menu-title/menu-title.component';
+import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
+import { HomeComponent } from "./pages/home/home.component";
 
 @Component({
-  selector: "app-root",
+  selector: 'app-root',
   standalone: true,
   imports: [MenuTitleComponent,
-            MenuBarComponent,
-            SmallCardComponent,
-            IconComponent], 
-  template: `
-    <div>
-      <app-menu-bar></app-menu-bar>
-      <main>
-        <h1>Meu Aplicativo Angular</h1>
-        <!-- Outro conteúdo -->
-      </main>
-    </div>
-  `,
-  styleUrl: "./app.component.css",
+    MenuBarComponent,
+    SmallCardComponent,
+    BigCardComponent,
+    RouterOutlet, HomeComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = "angular-app"
+  title = 'angular-blog';
 }
