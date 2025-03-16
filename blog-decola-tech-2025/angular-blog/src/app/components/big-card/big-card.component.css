@@ -11,7 +11,7 @@
 
 .big-card__title>h1{
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 30px;
 
 }
 
@@ -24,4 +24,5 @@
 .big-card__photo>img{
     width: 100%;
     min-width: 400px;
+    margin-top: 20px;
 }
