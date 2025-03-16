@@ -1,6 +1,8 @@
 .container__small-card{
     margin-bottom: 15px;
     width: 800px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .container__small-card-content{

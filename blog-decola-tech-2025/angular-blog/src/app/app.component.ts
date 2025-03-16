@@ -8,7 +8,6 @@ import { HomeComponent } from "./pages/home/home.component";
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [MenuTitleComponent,
     MenuBarComponent,
     SmallCardComponent,
