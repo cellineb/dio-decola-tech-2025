@@ -28,7 +28,8 @@ A saída do programa deve exibir o valor convertido no formato "Valor em reais: 
 ### Entrada
 <p>Dois valores:
 
-Nome do usuário (string)
+<br>
+Nome do usuário (string)<br>
 Idade (inteiro)</p>
 
 ### Saída
@@ -44,21 +45,21 @@ Exibir mensagens apropriadas indicando se o usuário foi encontrado ou não. </p
 
 ### Entrada
 <p>O programa recebe os seguintes dados na entrada:
-
-Um número inteiro N representando o número de usuários a serem cadastrados.
-Para cada um dos N usuários, dois números inteiros:
-O primeiro número representa o ID do usuário.
-O segundo número representa a idade do usuário.
-Um número inteiro M representando a quantidade de IDs que serão verificados.
+<br>
+Um número inteiro N representando o número de usuários a serem cadastrados. <br>
+Para cada um dos N usuários, dois números inteiros: <br>
+O primeiro número representa o ID do usuário. <br>
+O segundo número representa a idade do usuário. <br>
+Um número inteiro M representando a quantidade de IDs que serão verificados.<br>
 M números inteiros, representando os IDs a serem verificados no banco de dados.</p>
 
 ### Saída
 <p>1. Cadastro de usuários → "user {ID} OK"
 
-2.  Verificação de usuários:
+2.  Verificação de usuários: <br>
 
-"ID registered user" → Se o ID for encontrado.
-"ID invalid user" → Se o ID não for encontrado.
+"ID registered user" → Se o ID for encontrado. <br>
+"ID invalid user" → Se o ID não for encontrado. <br>
 Observação: A idade do usuário é informada no cadastro, mas não é utilizada durante a verificação de IDs.</p>
 
 ## Desafio 5 - Simulando Funcionalidades de um Sistema de Artigos - Simulando um Banco de Dados de Artigos
@@ -67,14 +68,14 @@ Observação: A idade do usuário é informada no cadastro, mas não é utilizad
 
 ### Requisitos
 <p> Você deverá criar um banco de artigos utilizando uma estrutura de dados apropriada. O banco deve conter os seguintes artigos:
-
-ID	Título
-1	Introducao ao Angular
-2	Como usar Services
-3	Rotas no Angular
-4	Criando Pipes
-5	Gerenciamento de Estado no Angular
-6	Lazy Loading e Performance
+<br>
+ID	Título <br>
+1	Introducao ao Angular <br>
+2	Como usar Services <br>
+3	Rotas no Angular <br>
+4	Criando Pipes <br>
+5	Gerenciamento de Estado no Angular <br>
+6	Lazy Loading e Performance <br>
 Para armazenar os artigos, utilize uma estrutura de chave-valor, onde o ID do artigo será a chave (Integer) e o título será o valor (String).</p>
 
 ### Entrada
@@ -94,10 +95,11 @@ Se nenhum artigo for encontrado, o programa deve exibir uma mensagem indicando q
 Lista de Artigos Disponíveis
 Implemente a base de dados contendo os seguintes artigos:
 
-Introducao ao Angular
-Como usar Services
-Rotas no Angular
-Criando Pipes
+<br>
+Introducao ao Angular <br>
+Como usar Services <br>
+Rotas no Angular <br> 
+Criando Pipes <br> 
 Cada título deve ser armazenado e pesquisado de forma que a busca não diferencie maiúsculas e minúsculas.</p>
 
 ### Entrada
@@ -105,13 +107,12 @@ Cada título deve ser armazenado e pesquisado de forma que a busca não diferenc
 
 ### Saída
 <p>1. Se houver correspondências, exibir os artigos no formato:
-
+<br>
 Artigos encontrados:
-- {Título do Artigo 1}
-- {Título do Artigo 2}
+- {Título do Artigo 1} <br>
+ - {Título do Artigo 2} <br>
 
- 2. Se nenhum artigo corresponder ao termo pesquisado:
-
+2. Se nenhum artigo corresponder ao termo pesquisado:
 Nenhum artigo encontrado para o termo: {termo}</p>
 
 ## Desafio 7 - Simulando Funcionalidades de um Sistema de Artigos
@@ -119,21 +120,21 @@ Nenhum artigo encontrado para o termo: {termo}</p>
 <p>Implemente um programa que simula um sistema de curtidas para artigos de um blog. O sistema permite adicionar curtidas e consultar curtidas de um artigo existente.
 
 O usuário pode escolher entre:
-
-Adicionar curtidas a um artigo existente.
-Consultar curtidas de um artigo pelo ID.
-Sair do programa.
+<br>
+Adicionar curtidas a um artigo existente. <br>
+Consultar curtidas de um artigo pelo ID. <br>
+Sair do programa. <br>
 Se o usuário tentar interagir com um artigo inexistente, o sistema deve exibir "Erro: Artigo não encontrado!".</p>
 
 ### Entrada
 <p>O programa permite interações em um loop controlado até que o usuário escolha a opção "Sair":
 
 Número da opção:
-
-1 → Adicionar curtidas.
-2 → Consultar curtidas.
-3 → Sair.
-ID do artigo (inteiro).
+<br>
+1 → Adicionar curtidas. <br>
+2 → Consultar curtidas. <br>
+3 → Sair. <br>
+ID do artigo (inteiro). <br>
 
 Para a opção 1, o usuário deve informar o número de curtidas (inteiro) a serem adicionadas.</p>
 
