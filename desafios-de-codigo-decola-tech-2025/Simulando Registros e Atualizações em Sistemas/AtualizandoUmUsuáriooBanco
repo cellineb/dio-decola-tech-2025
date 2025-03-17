@@ -1,0 +1,59 @@
+// Para ler e escrever dados em Java, aqui na DIO padronizamos da seguinte forma: 
+// - new Scanner(System.in): cria um leitor de Entradas, com métodos úteis com prefixo "next";
+// - System.out.println:.imprime um texto de Saída (Output) e pulando uma linha.  
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        List<String> resultados = new ArrayList<>();
+
+        // TODO: Leia o número de usuários que serão cadastrados no sistema:
+        int n = scanner.nextInt();
+
+        Map<Integer, Integer> usuarios = new HashMap<>();
+        
+        // TODO: Para cada usuário, leia o ID e a idade, armazenando no mapa de usuários:
+        // Além disso, armazene a mensagem de confirmação no formato: "user {id} OK"
+        int id = 0;
+        int idade = 0;
+        String confirmacao = "";
+        
+        for (int i = 0; i < n; i++){
+          
+          id = scanner.nextInt();
+          idade = scanner.nextInt();
+          
+          usuarios.put(id, idade);
+          
+          confirmacao = "user " + id + " OK";
+          System.out.println(confirmacao);
+          
+        }
+
+        // TODO: Leia o número de verificações de usuários que serão realizadas:
+        int m = scanner.nextInt();
+
+        // TODO: Para cada verificação, leia um ID e verificar se ele está cadastrado no mapa de usuários:
+        for (int i = 0; i < m; i++){
+          int num = scanner.nextInt();
+          if (usuarios.containsKey(num)){
+            resultados.add(num + " registered user");
+          } else {
+            resultados.add(num + " invalid user");
+          }
+        }
+        
+        // Se o ID existir, adicionar a mensagem "{id} registered user"
+        // Se o ID não existir, adicionar a mensagem "{id} invalid user"
+
+        
+        scanner.close();
+
+        for (String resultado : resultados) {
+            System.out.println(resultado);
+        }
+    }
+}

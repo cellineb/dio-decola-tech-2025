@@ -1,0 +1,29 @@
+// Para ler e escrever dados em Java, aqui na DIO padronizamos da seguinte forma: 
+// - new Scanner(System.in): cria um leitor de Entradas, com métodos úteis com prefixo "next";
+// - System.out.println:.imprime um texto de Saída (Output) e pulando uma linha.  
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        String usuario = scanner.next();
+        String senha = scanner.next();
+        scanner.close();
+        
+        // TODO: Implementar a lógica de autenticação verificando usuário e senha
+        // Dica: Compare os valores das variáveis 'usuario' e 'senha' com credenciais predefinidas
+        // Exemplo de credenciais: usuario = "admin", senha = "1234" 
+        
+        if (usuario.equals("admin") && senha.equals("1234")) {
+          System.out.println("Login bem-sucedido!");
+        } else {
+          System.out.println("Falha na autenticacao!");
+        }
+
+
+           
+    }
+}

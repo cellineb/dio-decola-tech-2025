@@ -1,0 +1,41 @@
+// Para ler e escrever dados em Java, aqui na DIO padronizamos da seguinte forma: 
+// - new Scanner(System.in): cria um leitor de Entradas, com métodos úteis com prefixo "next";
+// - System.out.println:.imprime um texto de Saída (Output) e pulando uma linha.  
+
+import java.util.Scanner;
+import java.util.HashMap;
+import java.util.Map;
+
+public class BancoDeArtigos {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        // TODO: Crie um Map para armazenar os artigos, simulando um banco de dados.
+        // A chave (Integer) representa o ID do artigo e o valor (String) representa o título do artigo.
+        HashMap<Integer, String> banco = new HashMap<>();
+        
+        banco.put(1, "Introducao ao Angular");
+        banco.put(2, "Como usar Services");
+        banco.put(3, "Rotas no Angular");
+        banco.put(4, "Criando Pipes");
+        banco.put(5, "Gerenciamento de Estado no Angular");
+        banco.put(6, "Lazy Loading e Performance");
+        
+
+        // Entrada do usuário
+        int id = scanner.nextInt();
+        
+        // TODO: Verifique se o ID existe no banco de dados e exibir o artigo correspondente.
+        // Se o ID estiver presente, imprimir "Artigo: {Título do Artigo}".
+        // Caso contrário, ele retorna "Artigo nao encontrado.".
+        if (banco.containsKey(id)) {
+            System.out.println("Artigo: " + banco.get(id));
+        } else {
+            System.out.println("Erro: Artigo nao encontrado!");
+        }
+        
+        
+        scanner.close();
+    }
+}

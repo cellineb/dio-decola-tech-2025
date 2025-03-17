@@ -1,0 +1,20 @@
+// Para ler e escrever dados em Java, aqui na DIO padronizamos da seguinte forma: 
+// - new Scanner(System.in): cria um leitor de Entradas, com métodos úteis com prefixo "next";
+// - System.out.println:.imprime um texto de Saída (Output) e pulando uma linha.  
+
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double valorDolar = scanner.nextDouble();
+        scanner.close();
+        
+        // TODO: Implemente a conversão de dólar para real com uma cotação fixa de R$5,00 por US$1,00:
+        double valorReal = valorDolar * 5.0;
+        System.out.printf("Valor em reais: R$%.2f", valorReal);
+
+    }
+}

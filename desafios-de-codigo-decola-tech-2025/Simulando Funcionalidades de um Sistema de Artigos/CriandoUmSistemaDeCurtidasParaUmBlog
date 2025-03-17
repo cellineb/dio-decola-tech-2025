@@ -1,0 +1,116 @@
+// Para ler e escrever dados em Java, aqui na DIO padronizamos da seguinte forma: 
+// - new Scanner(System.in): cria um leitor de Entradas, com métodos úteis com prefixo "next";
+// - System.out.println:.imprime um texto de Saída (Output) e pulando uma linha.  
+
+
+import java.util.*;
+
+class Artigo {
+    int id;
+    String titulo;
+    String autor;
+    String dataPublicacao;
+    int curtidas;
+
+    public Artigo(int id, String titulo, String autor, String dataPublicacao, int curtidasIniciais) {
+        this.id = id;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.dataPublicacao = dataPublicacao;
+        this.curtidas = curtidasIniciais;
+    }
+
+    public void adicionarCurtidas(int quantidade) {
+        this.curtidas += quantidade;
+    }
+
+    public String obterInformacoes() {
+        return titulo + " | " + autor + " | " + dataPublicacao + " | Curtidas: " + curtidas;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Map<Integer, Artigo> artigos = new HashMap<>();
+
+        // TODO: Crie e armazene artigos simulando um "banco de dados".
+        // Cada artigo deve ter um ID, título, autor, data de publicação e número inicial de curtidas.
+        artigos.put(1, new Artigo(1, "Introdução ao Angular", "Carlos Silva", "10/01/2024", 10));
+        artigos.put(2, new Artigo(2, "Como usar Services", "Ana Souza", "15/02/2024", 5));
+        artigos.put(3, new Artigo(3, "Rotas no Angular", "Joao Pedro", "02/03/2024", 2));
+        artigos.put(4, new Artigo(4, "Criando Pipes", "Maria Oliveira", "12/03/2024", 8));
+
+        List<String> saidas = new ArrayList<>();
+
+        while (true) {
+            String entrada = scanner.nextLine().trim();
+
+            if (entrada.equalsIgnoreCase("Sair")) {
+                break;
+            }
+
+            String[] partes = entrada.split(" ");
+
+            // TODO: Trate entradas inválidas, garantindo que ao menos opção e ID sejam informados.
+            if (partes.length < 2) {
+                saidas.add("Erro: Entrada invalida! Informe uma opcao e um ID.");
+                continue;
+            }
+
+            int opcao;
+            int idArtigo;
+
+            try {
+                opcao = Integer.parseInt(partes[0]);
+                idArtigo = Integer.parseInt(partes[1]);
+            } catch (NumberFormatException e) {
+                saidas.add("Erro: Entrada invalida! Informe uma opcao e um ID.");
+                continue;
+            }
+
+            // TODO: Trate entradas com opção inválida
+            if (opcao != 1 && opcao != 2) {
+                saidas.add("Erro: Opcao invalida! Use 1 para add curtidas ou 2 para consultar.");
+                continue;
+            }
+
+            // TODO: Verificar se o artigo existe no "banco de dados"
+            if (!artigos.containsKey(idArtigo)) {
+                saidas.add("Erro: Artigo nao encontrado!");
+                continue;
+            }
+
+            Artigo artigo = artigos.get(idArtigo);
+
+            // TODO: Implemente a lógica para adicionar curtidas ao artigo (Opcao 1).
+            // Se a opção for "1", o usuário deve fornecer um terceiro valor representando o número de curtidas a adicionar.
+            if (opcao == 1) {
+                if (partes.length < 3) {
+                    saidas.add("Erro: Informe a quantidade de curtidas.");
+                    continue;
+                }
+
+                try {
+                    int quantidade = Integer.parseInt(partes[2]);
+                    artigo.adicionarCurtidas(quantidade);
+                    saidas.add("Curtidas atualizadas: " + artigo.curtidas);
+                } catch (NumberFormatException e) {
+                    saidas.add("Erro: Informe a quantidade de curtidas.");
+                }
+
+            } else if (opcao == 2) {
+                // TODO: Implementar a lógica para exibir as informações do artigo (Opcao 2).
+                // Se a opção for "2", exibir os detalhes do artigo no formato esperado.
+                saidas.add(artigo.obterInformacoes());
+            }
+        }
+
+        // Exibe todas as saídas no final
+        for (String saida : saidas) {
+            System.out.println(saida);
+        }
+
+        scanner.close();
+    }
+}

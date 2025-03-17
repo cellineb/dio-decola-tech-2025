@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class InsercaoUsuario {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<String> usuarios = new ArrayList<>();
+
+        // TODO: Solicitar ao usuário a inserção de 3 registros iniciais (nome e idade).
+        for (int i = 0; i < 3; i++){
+          String nome = scanner.next();
+          int idade = scanner.nextInt();
+          
+          usuarios.add(nome);
+        }
+        
+        scanner.close(); // Fecha o scanner após as leituras
+        
+        // TODO: Exibir a lista de usuários cadastrados, formatando a saída conforme o exemplo esperado.
+        
+        System.out.println("Banco de dados atualizado: " + String.join(", ", usuarios));
+    }
+}
