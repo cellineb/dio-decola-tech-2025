@@ -1,6 +1,6 @@
 .container__small-card{
     margin-bottom: 15px;
-    width: 800px;
+    width: 700px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -21,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
 }
 
 .container__small-card__separator{
