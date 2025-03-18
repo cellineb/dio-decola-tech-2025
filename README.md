@@ -1,5 +1,5 @@
 # Decola Tech Avanade 2025 🚀
-<p>O Bootcamp Decola Tech 2025 passou por diversos conceitos da programação, porém focado em Spring Boot e Angular. Mas além disso também pude aprender sobre dados, TypeScript, API REST, Inteligência Artifical e SQL. Além de rever conceitos que eu já tinha visto antes como HTML, CSS e JDBC. Foi uma jornada enriquecedora e muito gostosa.</p>
+<p>O Bootcamp Decola Tech 2025 passou por diversos conceitos da programação, porém focado em Spring Boot e Angular. Mas além disso também pude aprender sobre TypeScript e API REST. Além de rever conceitos que eu já tinha visto antes como HTML, CSS, JDBC, Inteligência Artifical e SQL. Foi uma jornada enriquecedora e muito gostosa.</p>
 
 ## Projeto 1 - API REST - Biblioteca 
 <p>O projeto consiste em uma API RESTful desenvolvida em Java com o framework Spring Boot. A aplicação tem como objetivo gerenciar um acervo pessoal de livros, onde os usuários podem manter uma lista de livros favoritos e outra lista de livros que desejam comprar (wishlist). Os usuários podem adicionar os livros que leram e darem uma nota de 1 a 5 (estrelas). A API oferece operações completas de CRUD (Create, Read, Update e Delete) para as duas entidades principais: User e Book. 
