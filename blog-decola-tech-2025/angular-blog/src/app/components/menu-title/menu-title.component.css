@@ -1,5 +1,7 @@
 .container__menu-title{
     color: #070707;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .container__menu-title>h1{
@@ -11,9 +13,4 @@
     justify-content: center;
     font-family:'Segoe UI';
     font-weight:lighter;
-}
-
-.container__menu-title>hr{
-    margin-top: 15px;
-    margin-bottom: 15px;
 }

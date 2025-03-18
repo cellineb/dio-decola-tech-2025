@@ -27,3 +27,7 @@
 .container__small-card__separator{
     margin-top: 10px;
 }
+
+.container__small-card__separator > hr {
+    border: 1px solid #dfd4d4;
+}

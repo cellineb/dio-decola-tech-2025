@@ -1,0 +1,20 @@
+.container__subtitle {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Garante que o texto do h2 fique centralizado */
+}
+
+.container__subtitle > h2 {
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.line {
+    width: 80%;
+}
+
+.line > hr {
+    border: 1px solid #dfd4d4;
+}
