@@ -1,3 +1,3 @@
-# Blog com Angular
-<p>O projeto de blog consiste no desenvolvimento de um site, focado no Front-end. Optei por desenvolver um blog de portifólio pessoal em TypeScript e Angular, o site contém um menu onde o usuário pode acessar o meu perfil do LinkedIn e o meu perfil do GitHub, além de conter componentes que possuem links que levam para alguns projetos meus no GitHub.
+# Blog com Angular - Portifólio 
+<p>O projeto de blog consiste no desenvolvimento de um site, focado no Front-end. Optei por desenvolver um blog de portifólio pessoal em TypeScript e Angular, o site contém um menu onde o usuário pode acessar o meu perfil do LinkedIn, meu perfil do GitHub e meu Currículo. Ele também contém a aba "PROJETOS" que possuem componentes que tem links que levam para alguns projetos meus no GitHub. Mais para baixo tem a aba "HABILIDADES" que contém algumas skills minhas, como: linguagens de programação, frameworks e bibliotecas, banco de dados, ferramentas e ambientes.
 </p>
