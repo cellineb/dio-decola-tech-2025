@@ -6,6 +6,7 @@
 }
 
 .container__subtitle > h2 {
+    margin-top: 10px;
     margin-bottom: 7px;
     font-weight: 600;
     font-size: xx-large;
@@ -16,5 +17,5 @@
 }
 
 .line > hr {
-    border: 1px solid #dfd4d4;
+    border: 1px solid #d8bbbb;
 }

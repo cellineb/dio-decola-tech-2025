@@ -24,6 +24,10 @@
     font-size: 12px;
 }
 
+.small-card__title > h1:hover {
+    color: rgb(136, 136, 224);
+}
+
 .container__small-card__separator{
     margin-top: 10px;
 }

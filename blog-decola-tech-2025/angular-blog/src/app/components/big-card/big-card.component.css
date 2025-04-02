@@ -16,6 +16,10 @@
 
 }
 
+.big-card__title :hover {
+    color: rgb(136, 136, 224);
+}
+
 .big-card__description>p{
     margin-top: 10px;
     margin-bottom: 20px;

@@ -1,8 +1,14 @@
 .container__articles{
-    
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+
+.container__skills{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

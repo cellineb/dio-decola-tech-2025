@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 *{
-    background-color: #110101;
+    background-color: #1e0202;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #dfd4d4;
+    color: #d8bbbb;
     font-family: 'Segoe UI';
     font-weight:lighter;
 }

@@ -9,3 +9,7 @@
     list-style: none;
     font-size: 22px;
 }
+
+.container__menu-bar a:hover {
+    color: rgb(113, 113, 232);
+}
